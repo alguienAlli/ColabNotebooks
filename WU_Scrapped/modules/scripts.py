@@ -554,8 +554,8 @@ def IOComponent_init(self, *args, **kwargs):
     return res
 
 
-original_IOComponent_init = gr.components.IOComponent.__init__
-gr.components.IOComponent.__init__ = IOComponent_init
+#original_IOComponent_init = gr.components.IOComponent.__init__
+#gr.components.IOComponent.__init__ = IOComponent_init
 
 
 def BlockContext_init(self, *args, **kwargs):
@@ -566,5 +566,5 @@ def BlockContext_init(self, *args, **kwargs):
     return res
 
 
-original_BlockContext_init = gr.blocks.BlockContext.__init__
-gr.blocks.BlockContext.__init__ = BlockContext_init
+#original_BlockContext_init = gr.blocks.BlockContext.__init__
+#gr.blocks.BlockContext.__init__ = BlockContext_init
