@@ -317,6 +317,9 @@ class ScriptRunner:
         inputs = [None]
         inputs_alwayson = [True]
 
+        #Added NEW TEST, END EXECUTION TO AVOID GRADIO
+        return inputs;
+        
         def create_script_ui(script, inputs, inputs_alwayson):
             script.args_from = len(inputs)
             script.args_to = len(inputs)
